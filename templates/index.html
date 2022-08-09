@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <body>
+        <form style="margin: auto; width: 330px;" action= "http://127.0.0.1:5000/predict" method="post" >
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" required = "required" /><br>
+            <br>
+
+            <label for="avg_glucose_level">Avg Glucose Level:</label>
+            <input type="number"  name="avg_glucose_level" required = "required" /><br>
+            <br>
+
+            <label for="BMI">BMI:</label>
+            <input type="number" name="BMI" required = "required" /><br>
+            <br>
+
+            <label for="hypertension">Hypertension:</label>
+            <input type="radio" id="hypertension_Yes" name="hypertension" value="1">
+            <label for="hypertension_Yes">Yes</label>
+            <input type="radio" id="hypertension_No" name="hypertension" value="0">
+            <label for="hypertension_No">No</label><br>
+            <br>
+
+            <label for="Heart_Disease">Heart Disease:</label>
+            <input type="radio" id="Heart_Disease_Yes" name="Heart_Disease" value="1">
+            <label for="Heart_Disease_Yes">Yes</label>
+            <input type="radio" id="Heart_Disease_No" name="Heart_Disease" value="0">
+            <label for="Heart_Disease_No">No</label><br>
+            <br>
+
+            <label for="smoking_status_new">Smoking Status:</label>
+            <select name="smoking_status_new" id="smoking_status_new" >
+                <option value="2">never smoked</option>
+                <option value="1">formerly smoked</option>
+                <option value="3">smokes</option>
+                <option value="0">Unknown</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="Male" name="Gender" value="1">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender" value="0">
+            <label for="Female">Female</label><br>
+            <br>
+
+            <label for="ever_married">Ever Married:</label>
+            <select name="ever_married" id="ever_married" >
+                <option value="married">Married</option>
+                <option value="unmarried">unmarried</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="work_type">Work Type:</label>
+            <select name="work_type" id="work_type" >
+                <option value="Government">Government</option>
+                <option value="Private">Private</option>
+                <option value="Self-employed">Self-employed</option>
+                <option value="Children">Children</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="Residence_type">Residence Type:</label><br>
+            <select name="Residence_type" id="Residence_type" >
+                <option value="Rural">Rural</option>
+                <option value="Urban">Urban</option>
+            </select>
+            <br>
+            <br>
+
+            <input type="submit" />
+
+
+        </form>
+
+    </body>
+</html>
